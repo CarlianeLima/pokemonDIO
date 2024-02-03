@@ -20,6 +20,7 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/modal.css">
 </head>
 
 <body>
@@ -29,6 +30,26 @@
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
         </ol>
+
+        <div id="vis-modal" class="modal">
+            <div class="content">
+                <div class="NameAndNumber">
+                    <span id="pokemonName" class="pokemonName"></span>
+                    <span id="pokemonNumber" class="pokemonNumber"></span>
+                </div>
+                
+
+                <div class="image">
+                    <img id="pokemonImage" src="" alt="">
+                </div>
+
+                <div class="types">
+                    <span id="pokemonTypes" class="pokemonType"></span>
+                </div>
+
+                <button id="modalButton" type="button" class="close-modal" onclick="fecharModal('vis-modal')">Close</button>
+            </div>
+        </div>
 
         <div class="pagination">
             <button id="loadMoreButton" type="button">
